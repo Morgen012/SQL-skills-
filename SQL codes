@@ -2,6 +2,7 @@
 
 *\
 SELECT
-  SUM(Total) AS [Total Sales]
+  SUM(Total) AS [Total Sales],
+  AVG(Total) AS [Average Sales]
 FROM
   Invoice
