@@ -1,0 +1,7 @@
+/*Aggregate Functions
+
+*\
+SELECT
+  SUM(Total) AS [Total Sales]
+FROM
+  Invoice
