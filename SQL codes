@@ -34,4 +34,19 @@ GROUP BY
 	BillingCity
 ORDER BY
 	BillingCity
+
+Description: Grouping in SQL|What are the average invoice totals for only the cities that start with L?
+*/
+SELECT
+	BillingCity,
+	round(avg(total),2)
+FROM
+	Invoice
+WHERE
+	BillingCity LIKE 'L%'
+GROUP BY 
+	BillingCity
+ORDER BY
+	BillingCity
+	
 	
