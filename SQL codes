@@ -9,3 +9,14 @@ SELECT
   COUNT(*) AS [Sales COUNT]
 FROM
   Invoice
+
+
+/*Nesting Functions*\
+SElECT
+  SUM(Total) AS [Total Sales],
+  round(AVG(Total),2) AS [Average Sales],
+  Max(Total) AS [Minimum Sale].
+  Min(Total) AS [Minimum Sale].
+  Count(*) AS [Sales COUNT]
+FROM
+  Invoice
