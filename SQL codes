@@ -20,3 +20,17 @@ SElECT
   Count(*) AS [Sales COUNT]
 FROM
   Invoice
+
+Created by:Morgen Osborn
+Create Date: 01/25/24
+Description: Grouping in SQL|What are the average invoice totals by city?
+*/
+SELECT
+	BillingCity,
+	avg(total)
+FROM
+	Invoice
+GROUP BY 
+	BillingCity
+ORDER BY
+	BillingCity
